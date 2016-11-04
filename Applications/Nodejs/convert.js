@@ -8,36 +8,24 @@ function base64Decode(data){
 	}
 }
 
+//Convert byte Array to hex string
+function toHexString(byteArray) {
+  return byteArray.map(function(byte) {
+    return ('0' + (byte & 0xFF).toString(16)).slice(-2);
+  }).join('')
+}
+
 // conversion function
 var conversion = function(data){
 
         var bytes = base64Decode(data);
 	var message = {};
 
-	//conversion starts
-
-	//example
-
-	/*var lat = ((bytes[0] << 24)|(bytes[1] << 16)|(bytes[2] << 8)|bytes[3]) / 10E5;
-  	var lng = ((bytes[4] << 24)|(bytes[5] << 16)|(bytes[6] << 8)|bytes[7]) / 10E5;
-	message.Lat = lat;
-	message.Lng = lng;
-
-  	if(bytes.length > 8){
-  		if(String.fromCharCode(parseInt(bytes[8], 10)) == 't'){
-			var temp = ((bytes[9] << 8) | bytes[10])/100;
-			message.Temp = temp;
-  		}
-		else if(String.fromCharCode(parseInt(bytes[8], 10)) == 'l'){
-  			var light = ((bytes[9] << 8) | bytes[10])/100;
-			message.Light = light;
-  		}
-	}*/
-        //simply return bytes
-	message = data;
-
-	//return converted data as payload (JSON)
-	//return {payload: message};
+	//Conversion starts here
+	//You can start doing conversion and return converted data as message
+        //but now we simply return bytes
+	message = toHexString(bytes);
+	
 	return message;
 }
 
