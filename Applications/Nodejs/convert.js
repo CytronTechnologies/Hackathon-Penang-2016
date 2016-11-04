@@ -23,7 +23,7 @@ var conversion = function(data){
 
 	//Conversion starts here
 	//You can start doing conversion and return converted data as message
-        //but now we simply return bytes
+        //but now we simply return hex string
 	message = toHexString(bytes);
 	
 	return message;
