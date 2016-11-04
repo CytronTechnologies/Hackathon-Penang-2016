@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Orbiwise LoRa Test</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <style media="screen">
+      body { font-family: arial }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+	<h1><b>Activity Feeds</b></h1>
+    	<div class="list-group activity">
+      
+    	</div>
+	</div>
+    </div>
+    <script>
+      var activityFeed = document.querySelector(".activity")
+      var socket = io('/')
+
+      socket.on('uplink', function (data) {
+        // Log to the console
+        console.log("Uplink from Device:" + data.payloads_ul.deveui, data)
+
+        // Create a new DOM element
+        var uplink = document.createElement("div")
+	uplink.className = "list-group-item"
+        var date = new Date(data.payloads_ul.timestamp)
+        var dateString = (date.getHours()>9?date.getHours():'0'+date.getHours()) + ":" + (date.getMinutes()>9?date.getMinutes():'0'+date.getMinutes()) + ":" + (date.getSeconds()>9?date.getSeconds():'0'+date.getSeconds())
+        uplink.innerText = dateString + " - Uplink " + data.payloads_ul.fcnt + " from " + data.payloads_ul.deveui + ": " + JSON.stringify(data.payload)
+
+        // Append to the activity feed
+        activityFeed.insertBefore(uplink, activityFeed.firstChild)
+      })
+
+    </script>
+  </body>
+</html>
