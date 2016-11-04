@@ -12,11 +12,11 @@ var convert = require("./convert");
 var conf = {
     host: "guestnet-malaysia.orbiwise.com",
     port: null,
-    userid: "bengchet@cytron.com.my",
-    password: "cytronbc123"
+    userid: "YOUR_USER_ID",
+    password: "YOUR_PASSWORD"
 };
 
-var devEUI = '0004A30B001BA535';
+var devEUI = 'YOUR_DEVEUI';
 
 var url = "wss://" + conf.host + (conf.port != null ? ":" + conf.port : "") + "/websocket/connect";
 
