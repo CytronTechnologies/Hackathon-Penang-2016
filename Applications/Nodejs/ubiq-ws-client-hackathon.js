@@ -18,7 +18,7 @@ var conf = {
     userid: "YOUR_USER_ID",
     password: "YOUR_PASSWORD"
 };
-se
+
 var devEUI = 'YOUR_DEVEUI';
 
 var url = "wss://" + conf.host + (conf.port != null ? ":" + conf.port : "") + "/websocket/connect";
