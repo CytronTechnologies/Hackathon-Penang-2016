@@ -1,0 +1,3 @@
+[submodule "Applications/Arduino/arduino-device-lib"]
+	path = Applications/Arduino/arduino-device-lib
+	url = https://github.com/CytronTechnologies/arduino-device-lib.git
