@@ -1,4 +1,7 @@
-/*jslint node: true, sloppy: true, bitwise: true, vars: true, eqeq: true, plusplus: true, nomen: true, es5:true */
+// Example web server application
+// Change conf.userid and conf.password respectively
+// devEUI is the name for the socket channel, can be any string, you can simply use your device EUI
+
 var app = require('http').createServer(handler)
 var io = require('socket.io')(app);
 var fs = require('fs');
@@ -15,7 +18,7 @@ var conf = {
     userid: "YOUR_USER_ID",
     password: "YOUR_PASSWORD"
 };
-
+se
 var devEUI = 'YOUR_DEVEUI';
 
 var url = "wss://" + conf.host + (conf.port != null ? ":" + conf.port : "") + "/websocket/connect";
