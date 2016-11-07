@@ -35,9 +35,9 @@ int main()
     SHA256((const unsigned char*)tmp.c_str(), tmp.length(), sha256_hash);
     //print dev address
 
-    printf("\nDevice Addr:");
+    printf("\nDevAddr:");
     for(int i=16;i<sizeof(sha1_hash);i++)
-    	printf("%02x", sha1_hash[i]);
+    	printf("%02X", sha1_hash[i]);
     
     //Get first 16 hex from sha1 result for appEUI, use md5 to make appkey
     
@@ -48,24 +48,24 @@ int main()
     MD5(appEUI, sizeof(appEUI), md5_hash);
     
     //appEUI
-    printf("\nAppEUI:");
+    printf("\nAppEUI :");
     for(int i=0;i<sizeof(appEUI);i++)
-    	printf("%02x", appEUI[i]);
+    	printf("%02X", appEUI[i]);
 
     //appKey
-    printf("\nAppKey:");
+    printf("\nAppKey :");
     for(int i=0;i<sizeof(md5_hash);i++)
-    	printf("%02x", md5_hash[i]);
+    	printf("%02X", md5_hash[i]);
 
     //network session key
     printf("\nNwksKey:");
     for(int i=0;i<16;i++)
-    	printf("%02x", sha256_hash[i]);
+    	printf("%02X", sha256_hash[i]);
 
     //apps session key
     printf("\nAppsKey:");
     for(int i=16;i<sizeof(sha256_hash);i++)
-    	printf("%02x", sha256_hash[i]);
+    	printf("%02X", sha256_hash[i]);
 
 
     printf("\n\nPress any key to continue");
