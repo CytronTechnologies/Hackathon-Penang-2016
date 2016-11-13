@@ -9,7 +9,7 @@ Keys generated:
 * NwkSKey
 * AppSKey
 
-Every LoRa shield/device has a unique devEUI. Please ask assistance from authorities if fail to retrieve devEUI.
+Every LoRa shield/device has a unique devEUI. Please consult the authorities for retrieval of devEUI.
 
 ## Prerequisite
 * NodeJS - [See here for how to install](https://nodejs.org/en/)
