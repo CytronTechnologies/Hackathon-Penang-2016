@@ -17,4 +17,9 @@ npm link node-red-contrib-orbiwise
 Now the node should be available after you have restarted Node-RED application.
 
 ## How to use this node
-
+//todo:
+//drag the node, attach a debug output
+//double click on the node
+//click on 'pencil' icon
+//enter your account username and password
+//click deploy
