@@ -14,8 +14,6 @@ npm link
 ```c
 npm link node-red-contrib-orbiwise
 ```
-Now the node should be available after you have restarted Node-RED application.
-
 * Install this node in the same Node-RED directory for base64 encode and decode function.
 ```c
 npm install node-red-node-base64
