@@ -12,11 +12,11 @@ using namespace std;
 int main()
 {
     printf("\n=============================================================\n");
-    printf("Simple security key generator for your device\n\n");
+    printf("Simple security key generator for your LoRa device\n\n");
     printf("You can get devEUI from your LoRa device\n");
     printf("Please refer to authorities if you don't have the devEUI\n");
     printf("=============================================================\n\n");
-    printf("Please enter devEUI:");
+    printf("Please enter DevEUI:");
     scanf("%16s", data);
     
     //convert to uppercase if needed
@@ -49,7 +49,7 @@ int main()
     
     //appEUI
     printf("\nAppEUI :");
-    for(int i=0;i<sizeof(appEUI);i++)
+    for(int i=0;i<sizeof(appEUI)/2;i++)
     	printf("%02X", appEUI[i]);
 
     //appKey
@@ -58,12 +58,12 @@ int main()
     	printf("%02X", md5_hash[i]);
 
     //network session key
-    printf("\nNwksKey:");
+    printf("\nNwkSKey:");
     for(int i=0;i<16;i++)
     	printf("%02X", sha256_hash[i]);
 
     //apps session key
-    printf("\nAppsKey:");
+    printf("\nAppSKey:");
     for(int i=16;i<sizeof(sha256_hash);i++)
     	printf("%02X", sha256_hash[i]);
 

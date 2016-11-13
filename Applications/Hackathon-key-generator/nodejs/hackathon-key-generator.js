@@ -9,14 +9,14 @@ var nwksKey ='';
 var appsKey ='';
 
 console.log('\n=============================================================');
-console.log('Simple security key generator for your device\n');
-console.log('You can get devEUI from your LoRa device');
-console.log('Please refer to authorities if you don\'t have the devEUI');
+console.log('Simple security key generator for your LoRa device\n');
+console.log('You can get DevEUI from your LoRa device');
+console.log('Please refer to authorities if you don\'t have the DevEUI');
 console.log('=============================================================\n');
 
 if(process.argv[2]){
 
-  console.log('devEUI : '+process.argv[2].toUpperCase());
+  console.log('DevEUI : '+process.argv[2].toUpperCase());
   
   var input = process.argv[2].toUpperCase();
 
@@ -26,16 +26,16 @@ if(process.argv[2]){
     
     var str = sha1_data.toString('hex');
 
-    appEUI = str.substring(0, 32);
+    appEUI = str.substring(0, 16);
     devAddr = str.substring(32, 40);
     
     md5.on('readable', () => {
     	var md5_data = md5.read();
 	if(md5_data){
 		appsKey = md5_data.toString('hex');
-		console.log("devAddr: "+devAddr.toUpperCase());
-    		console.log("appEUI : "+appEUI.toUpperCase());
-		console.log("appKey : "+appsKey.toUpperCase());
+		console.log("DevAddr: "+devAddr.toUpperCase());
+    		console.log("AppEUI : "+appEUI.toUpperCase());
+		console.log("AppKey : "+appsKey.toUpperCase());
 	} 	
     });
     md5.write(sha1_data.slice(0, 16));
@@ -52,8 +52,8 @@ if(process.argv[2]){
 
     nwksKey = str.substring(0, 32);
     appsKey = str.substring(32, 64);
-    console.log("nwksKey: "+nwksKey.toUpperCase());
-    console.log("appsKey: "+appsKey.toUpperCase());
+    console.log("NwkSKey: "+nwksKey.toUpperCase());
+    console.log("AppSKey: "+appsKey.toUpperCase());
   }
 
   });
@@ -67,5 +67,5 @@ if(process.argv[2]){
 }
 
 else{
-  console.log("[ERROR] Please enter devEUI!\n");
+  console.log("[ERROR] Please enter DevEUI!\n");
 }

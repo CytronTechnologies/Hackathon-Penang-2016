@@ -1,0 +1,55 @@
+
+<script type='text/x-red' data-template-name='orbiwise app'>
+  <div class='form-row'>
+    <label for='node-config-input-username'><i class='fa fa-desktop'></i> Username</label>
+    <input type='text' id='node-config-input-username' placeholder='johndoe@example.com'>
+  </div>
+
+  <br/>
+
+  <div class='form-row'>
+    <label for='node-config-input-password'><i class='fa fa-key'></i> Password</label>
+    <input type='password' id='node-config-input-password' placeholder=''>
+  </div>
+
+  <br/>
+
+  <div class='form-row'>
+    <label for='node-config-input-broker'><i class='fa fa-key'></i> Broker</label>
+    <input type='text' id='node-config-input-broker' placeholder=''>
+  </div>
+
+  <br/>
+</script>
+
+<script type='text/x-red' data-help-name='orbiwise app'>
+  <p>
+    Configure your Orbiwise application here.
+  </p>
+</script>
+
+<script type='text/javascript'>
+  RED.nodes.registerType('orbiwise app', {
+    category: 'config',
+    defaults: {
+      username: {
+        value: '',
+        type: 'string',
+        required: true,
+      },
+      password: {
+        value: '',
+        type: 'password',
+        required: true,
+      },
+      broker: {
+        value: 'guestnet-malaysia.orbiwise.com',
+        type: 'string',
+        required: true,
+      },
+    },
+    label: function() {
+      return this.username || 'johndoe@example.com';
+    },
+  });
+</script>

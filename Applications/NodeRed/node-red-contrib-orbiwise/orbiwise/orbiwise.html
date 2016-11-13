@@ -1,0 +1,46 @@
+<script type='text/x-red' data-template-name='orbiwise'>
+  <div class="form-row">
+    <label for="node-input-app"><i class="icon-tag"></i> App</label>
+    <input type="text" id="node-input-app">
+  </div>
+  <br/>
+  <div class='form-row'>
+    <label for='node-input-name'><i class='fa fa-tag'></i> Name</label>
+    <input type='text' id='node-input-name' placeholder='Name'>
+  </div>
+</script>
+
+<script type='text/x-red' data-help-name='orbiwise'>
+  <p>
+    This node gets messages for devices of on the specified application on
+    the Orbiwise network.
+  </p>
+</script>
+
+<script type='text/javascript'>
+  RED.nodes.registerType('orbiwise', {
+    category: 'input',
+    color:    '#d8c0d7',
+    defaults: {
+      app: {
+        type: 'orbiwise app',
+        required: true,
+      },
+      name: {
+        value: '',
+        type: 'string',
+        required: false,
+      },
+    },
+    inputs:  0,
+    outputs: 1,
+    icon: 'feed.png',
+    label: function() {
+      return this.name || 'orbiwise';
+    },
+    labelStyle: function() {
+      return this.name ? 'node_label_italic' : '';
+    },
+  });
+</script>
+

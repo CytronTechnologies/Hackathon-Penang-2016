@@ -1,0 +1,14 @@
+{
+    "name"         : "node-red-contrib-orbiwise",
+    "version"      : "0.0.1",
+    "description"  : "Orbiwise Node Red Node",
+    "dependencies": {
+        "ws": "^1.1.1"
+    },
+    "node-red"     : {
+        "nodes": {
+            "orbiwise-app": "orbiwise-app/orbiwise-app.js",
+            "orbiwise-message": "orbiwise/orbiwise.js"
+        }
+    }
+}
