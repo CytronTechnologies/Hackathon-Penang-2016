@@ -24,6 +24,10 @@ var conf = {
 ```c
 node ubiq-ws-client-hackathon.js
 ```
+**OR**
+```c
+npm start
+```
 * Navigate to //localhost:8080 in your web browser. 
 
 **NOTE:** The raw data obtained from Orbiwise server are in base64 encoded string. **convert.js** provides a small function to decode the raw data to a byte array. User can use it to tranform to more useful data.
