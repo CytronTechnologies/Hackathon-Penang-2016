@@ -16,7 +16,7 @@ Every LoRa shield/device has a unique devEUI. Please consult the authorities for
 
 ## To obtain the keys
 
-In this directory, run the following command:
+In this directory, run the following command in command window:
 ```c
 node hackathon-key-generator.js <your_deveui_here>
 ```
