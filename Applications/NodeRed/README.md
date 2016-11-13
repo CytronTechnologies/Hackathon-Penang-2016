@@ -2,7 +2,7 @@
 This is Node-RED node which allows user to connect to Orbiwise Server and retrieve data via websocket.
 
 ## Prerequisite
-* Node-RED ([See here on how to install Node-RED](https://nodered.org/docs/getting-started/installation))
+* Node-RED - [See here on how to install Node-RED](https://nodered.org/docs/getting-started/installation)
 
 ## How to install this node
 
