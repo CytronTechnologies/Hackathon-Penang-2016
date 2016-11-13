@@ -6,15 +6,21 @@ This is Node-RED node which allows user to connect to Orbiwise Server and retrie
 
 ## How to install this node
 
-After download or git clone Hackathon-Penang-2016.zip, go to <b>node-red-contrib-orbiwise</b> directory (containing package.json file), run this command in command window: 
+* After download or git clone Hackathon-Penang-2016.zip, go to <b>node-red-contrib-orbiwise</b> directory (containing package.json file), run this command in command window: 
 ```c
 npm link
 ```
-Go to Node-RED directory, open command window and run this command: 
+* Go to Node-RED directory, open command window and run this command: 
 ```c
 npm link node-red-contrib-orbiwise
 ```
 Now the node should be available after you have restarted Node-RED application.
+
+* Install this node in the same Node-RED directory for base64 encode and decode function.
+```c
+npm install node-red-node-base64
+```
+> More info on [node-red-node-base64](https://github.com/node-red/node-red-nodes/tree/master/parsers/base64).
 
 ## How to use this node
 //todo:
