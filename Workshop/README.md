@@ -1,5 +1,17 @@
 # Hackathon Penang 2016 Workshop
+Download this whole folder as zip and extract it into your preferred directory **OR** git clone the folder.
+
 ## CT-ARM installation
+1. Download the latest Arduino IDE at [Arduino official website](https://www.arduino.cc/en/Main/Software).
+2. Open Arduino IDE, go to File > Preferences, paste the following link at **Additional Boards Manager URLs**: `https://raw.githubusercontent.com/CytronTechnologies/Cytron-ARM-Arduino-URL/master/package_cytron_index.json`
+3. Click OK, then go to **Tools > Board > Boards Manager**. Find Cytron ARM Boards and click Install. It will take a few minutes.
+4. After the installation complete, you should find CT-ARM listed under **Tools > Board**. Select CT-ARM.
+5. Next, connect CT-ARM to your PC using Micro USB cable and proceed with FTDI driver installation (Please download the driver [here](http://www.ftdichip.com/Drivers/VCP.htm)). If you already using CT-UNO before, your PC should be able to detect the driver.
+6. Once complete, select proper COM port under **Tools > Port**.
+7. Open Blink example from **File > Examples > 01.Basics > Blink**, and upload to CT-ARM.
+
+## LoRa Arduino Library Installation
+
 
 ## User Registration
 1. Visit this link https://orbiwise-user-registration-bengchet.c9users.io/registration to register a new account.
