@@ -26,9 +26,17 @@ npm install node-red-node-base64
 
 1. Run Node-RED. Navigate to //localhost:1880 at web browser.
 2. Drag the **orbiwise** node and **debug** node to the dashboard. Attach these 2 nodes with link.
-3. Double-click the orbiwise node, give a name to the node.
-4. Click on 'pencil' icon, enter your account username and password and click `Add` after finish. Finally click `Done` to complete configuration for orbiwise node.
-5. Double-click the **debug** node. Change output from `msg.payload` to `complete msg object`.
+![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/Applications/NodeRed/img/nodered1.png)
+3. Double-click the orbiwise node, give a name to the node. Click on 'pencil' icon.
+![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/Applications/NodeRed/img/nodered2.png)
+4. Enter your account username and password and click `Add` after finish. Finally click `Done` to complete configuration for orbiwise node.
+![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/Applications/NodeRed/img/nodered3.png)
+![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/Applications/NodeRed/img/nodered4.png)
+5. Double-click the **debug** node. Change output from `msg.payload` to `complete msg object`. Click `Done` to complete configuration for debug node.
+![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/Applications/NodeRed/img/nodered5.png)
 6. Click `Deploy` to start the application.
+![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/Applications/NodeRed/img/nodered6.png)
+7. With successful connection to Orbiwise server, 'connected' green dot will be seen underneath orbiwise node.
+![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/Applications/NodeRed/img/nodered7.png)
 
 With the application running, user should be able to see messages at debug screen if there is any uplink or downlink event of your LoRa device.
