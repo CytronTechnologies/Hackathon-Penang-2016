@@ -39,3 +39,5 @@
 8. If your device is sending the data properly, you should be able to view the data. Click `refresh` to view any new coming data.
 
 ## Node-RED installation
+Node-RED allows you to create simple server applications using GUI.
+> More details, please refer [here](https://github.com/CytronTechnologies/Hackathon-Penang-2016/tree/master/Applications/NodeRed).
