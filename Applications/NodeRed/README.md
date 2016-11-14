@@ -23,9 +23,12 @@ npm install node-red-node-base64
 > More info on [node-red-node-base64](https://github.com/node-red/node-red-nodes/tree/master/parsers/base64).
 
 ## How to use this node
-//todo:
-//drag the node, attach a debug output
-//double click on the node
-//click on 'pencil' icon
-//enter your account username and password
-//click deploy
+
+1. Run Node-RED. Navigate to //localhost:1880 at web browser.
+2. Drag the **orbiwise** node and **debug** node to the dashboard. Attach these 2 nodes with link.
+3. Double-click the orbiwise node, give a name to the node.
+4. Click on 'pencil' icon, enter your account username and password and click `Add` after finish. Finally click `Done` to complete configuration for orbiwise node.
+5. Double-click the **debug** node. Change output from `msg.payload` to `complete msg object`.
+6. Click `Deploy` to start the application.
+
+With the application running, user should be able to see messages at debug screen if there is any uplink or downlink event of your LoRa device.
