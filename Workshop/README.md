@@ -1,5 +1,5 @@
 # Hackathon Penang 2016 Workshop
-Download this whole folder as zip and extract it into your preferred directory **OR** git clone the folder.
+**IMPORTANT:** Download this whole folder as zip and extract it into your preferred directory **OR** git clone the folder.
 
 ## CT-ARM installation
 1. Download the latest Arduino IDE at [Arduino official website](https://www.arduino.cc/en/Main/Software).
@@ -8,10 +8,13 @@ Download this whole folder as zip and extract it into your preferred directory *
 4. After the installation complete, you should find CT-ARM listed under **Tools > Board**. Select CT-ARM.
 5. Next, connect CT-ARM to your PC using Micro USB cable and proceed with FTDI driver installation (Please download the driver [here](http://www.ftdichip.com/Drivers/VCP.htm)). If you already using CT-UNO before, your PC should be able to detect the driver.
 6. Once complete, select proper COM port under **Tools > Port**.
-7. Open Blink example from **File > Examples > 01.Basics > Blink**, and upload to CT-ARM.
+7. For testing purpose, open Blink example from **File > Examples > 01.Basics > Blink**, and upload to CT-ARM.
 
 ## LoRa Arduino Library Installation
-
+1. Go to **Hackathon-Penang-2016 > Applications > Arduino**.
+2. Copy `arduino-device-lib` to Arduino libraries folder.
+3. Open `DeviceInfo` example from **File > Examples > TheThingsNetwork**, and upload to CT-ARM.
+4. Open Serial Monitor and search for DevEUI shown. Copy the DevEUI at somewhere else because we are going to use it later.
 
 ## User Registration
 1. Visit this link https://orbiwise-user-registration-bengchet.c9users.io/registration to register a new account.
