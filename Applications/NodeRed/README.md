@@ -8,7 +8,7 @@ This is Node-RED node which allows user to connect to Orbiwise Server and retrie
 
 ## How to install this node
 
-* After download or git clone Hackathon-Penang-2016.zip, go to <b>node-red-contrib-orbiwise</b> directory (containing package.json file), run this command in command window: 
+* After download or git clone Hackathon-Penang-2016.zip, go to **Hackathon-Penang-2016 > Applications > NodeRed > node-red-contrib-orbiwise**. In the directory containing package.json file (as it should be), run this command in command window: 
 ```c
 npm link
 ```
