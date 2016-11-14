@@ -12,3 +12,6 @@
 * [User Manual](https://docs.google.com/document/d/17pGtjOIAd_ZtC9u_m6qLz1EixjNYyebisPTqdK8habk/view)
 * [NUC131 Technical Reference Manual](https://drive.google.com/file/d/0BzFWfMiqqjyqUl9HNFFnOHM4RFE/view)
 * [NUC131 Datasheet](https://drive.google.com/file/d/0BzFWfMiqqjyqUUpUVm51NkVQV2c/view)
+
+## LoRa Shield
+* [User Manual](https://docs.google.com/document/d/17_thUsBlJlFJfcTA3iyveId9EMiMhBv-PQf_DU6X8m4/edit)
