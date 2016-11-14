@@ -9,6 +9,7 @@
 5. Next, connect CT-ARM to your PC using Micro USB cable and proceed with FTDI driver installation (Please download the driver [here](http://www.ftdichip.com/Drivers/VCP.htm)). If you already using CT-UNO before, your PC should be able to detect the driver.
 6. Once complete, select proper COM port under **Tools > Port**.
 7. For testing purpose, open Blink example from **File > Examples > 01.Basics > Blink**, and upload to CT-ARM.
+> More detailed info [here](http://tutorial.cytron.com.my/2016/02/15/ct-arm-beta-test/)
 
 ## LoRa Arduino Library Installation
 1. Go to **Hackathon-Penang-2016 > Applications > Arduino**.
