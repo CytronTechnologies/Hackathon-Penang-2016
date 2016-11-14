@@ -18,14 +18,24 @@
 
 ## User Registration
 1. Visit this link https://orbiwise-user-registration-bengchet.c9users.io/registration to register a new account.
-2. If the account is successfully registered, the webpage will redirect you to main Orbiwise login page, where you can sign in with account username and password.
+2. If the account is successfully registered, the webpage will redirect you to [Orbiwise login page](https://guestnet-malaysia.orbiwise.com/welcome.html), where you can sign in with account username and password.
 
 ## Device Registration
-1. Once you have login to the account, click `Add Device` to register your LoRa device.
-2. In this workshop, we only register `personalized` device.
-3. We can use generated keys derived from LoRa shield devEUI via https://orbiwise-user-registration-bengchet.c9users.io/generate. Only 3 keys are required for personalized device: `DevAddr`, `NwkSKey` and `AppSKey`.
-4. Register the device as `Class A` device.
+1. Once you have login to the account, go to **My Devices > List of Devices**.
+2. Click `Add Device` to register your LoRa device.
+3. Choose `Personalized` as registration type.
+4. Fill in DevEUI, AppEUI(optional), Comment(optional), DevAddr, NwkSkey and AppSKey. We can use generated keys derived from LoRa shield devEUI via https://orbiwise-user-registration-bengchet.c9users.io/generate. Copy all the generate keys at somewhere else for later use. 
+5. At **LoRa Parameters** tab, register the device as `Class A` device.
+6. Click `Add Device` to complete device registration.
 
 ## Sending data to Orbiwise
+1. Open example sketch `Workshop` from **File > Examples > TheThingsNetwork**.
+2. Modify devAddr, nwkSKey and appSKey in the sketch.
+3. Modify the payload in the sketch (optional).
+4. Upload to CT-ARM.
+5. Open Serial Monitor to view the progress of LoRa device.
+6. Go to [Orbiwise login page](https://guestnet-malaysia.orbiwise.com/welcome.html) (make sure you have login), access **My Devices > List of Devices**.
+7. Choose your registered device, right-click **action**, choose **View Data**.
+8. If your device is sending the data properly, you should be able to view the data. Click `refresh` to view any new coming data.
 
 ## Node-RED installation
