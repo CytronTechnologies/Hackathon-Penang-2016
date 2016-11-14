@@ -13,8 +13,8 @@
 > More detailed info [here](http://tutorial.cytron.com.my/2016/02/15/ct-arm-beta-test/)
 
 ## LoRa Arduino Library Installation
-1. Go to **Hackathon-Penang-2016 > Applications > Arduino**.
-2. Copy `arduino-device-lib` to Arduino libraries folder.
+1. Download the zip file from https://github.com/CytronTechnologies/arduino-device-lib.
+2. Open Arduino IDE, go to **Sketch > Include Library > Add .ZIP Library**, choose the downloaded zip file and click Open.
 3. Open `DeviceInfo` example from **File > Examples > TheThingsNetwork**, and upload to CT-ARM.
 4. Open Serial Monitor and search for DevEUI shown. Copy the DevEUI at somewhere else because we are going to use it later.
 
