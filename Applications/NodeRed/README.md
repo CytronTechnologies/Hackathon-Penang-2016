@@ -12,7 +12,7 @@ This is Node-RED node which allows user to connect to Orbiwise Server and retrie
 ```c
 npm link
 ```
-* Go to Node-RED directory, open command window and run this command: 
+* Go to Node-RED directory (normally `C:/Users/<Username>/.node-red` for Windows, `$HOME/.node-red` for Linux/OSX), open command window and run this command: 
 ```c
 npm link node-red-contrib-orbiwise
 ```
