@@ -2,6 +2,9 @@
 **IMPORTANT:** Download this whole folder as zip and extract it into your preferred directory **OR** git clone the folder.
 ## Basic Hardware Setup
 1. Stack LoRa Shield onto CT-ARM with antenna installed as shown in picture below. Make sure UART selector on LoRa Shield is selected correctly (D2 -> RX, D3 -> TX). **User can change UART depending on the program, by default we use this configuration**.
+![alt tag](https://lh4.googleusercontent.com/NQe-nsRqUh0R4YQnJL5oYKqpSiMONsXVpSKzB4hfyZJcUGGGna-fkqEWWC47dNosCK2VCuLrBrKhKrw=w915-h788-rw)
+![alt tag](https://lh4.googleusercontent.com/NQe-nsRqUh0R4YQnJL5oYKqpSiMONsXVpSKzB4hfyZJcUGGGna-fkqEWWC47dNosCK2VCuLrBrKhKrw=w915-h788-rw)
+![alt tag](https://lh4.googleusercontent.com/NQe-nsRqUh0R4YQnJL5oYKqpSiMONsXVpSKzB4hfyZJcUGGGna-fkqEWWC47dNosCK2VCuLrBrKhKrw=w915-h788-rw)
 
 ## CT-ARM installation
 1. Download the latest Arduino IDE at [Arduino official website](https://www.arduino.cc/en/Main/Software).
