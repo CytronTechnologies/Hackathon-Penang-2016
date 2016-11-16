@@ -3,11 +3,11 @@
 ## Basic Hardware Setup
 1. Stack LoRa Shield onto CT-ARM with antenna installed as shown in picture below. Make sure UART selector on LoRa Shield is selected correctly (D2 -> RX, D3 -> TX). **User can change UART depending on the program, by default we use this configuration**.
 <p><b>CT-ARM with LoRa Shield on top</b></p>
-![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/img/Lora%20Full.png)
-<p><b>CT-ARM + LoRa Shield with antenna installed</b></p>
-![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/img/LoRa%20Shield%20User%20Manual%20.jpg)
-<p><b>Choose D2 as RX and D3 as TX</b></p>
 ![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/img/IMG-20161111-WA0001.jpg)
+<p><b>CT-ARM + LoRa Shield with antenna installed</b></p>
+![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/img/Lora%20Full.png)
+<p><b>Choose D2 as RX and D3 as TX</b></p>
+![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/img/LoRa%20Shield%20User%20Manual%20.jpg)
 
 ## CT-ARM installation
 1. Download the latest Arduino IDE at [Arduino official website](https://www.arduino.cc/en/Main/Software).
