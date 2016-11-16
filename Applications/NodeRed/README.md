@@ -4,7 +4,7 @@ This is Node-RED node which allows user to connect to Orbiwise Server and retrie
 ## Prerequisite
 * Node-RED
 
-**TIP**: Refer [here](https://nodejs.org/en/) to install latest NodeJS package. After Node JS installation, refer to section **[Install Node-RED](https://nodered.org/docs/getting-started/installation#install-node-red)** to continue installation of Node-RED.
+**TIP**: Node-RED requires NodeJS installation. Refer [here](https://nodejs.org/en/) to install latest NodeJS package. After Node JS installation, refer to section **[Install Node-RED](https://nodered.org/docs/getting-started/installation#install-node-red)** to continue installation of Node-RED.
 
 ## How to install this node
 
