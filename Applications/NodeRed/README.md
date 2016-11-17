@@ -2,9 +2,26 @@
 This is Node-RED node which allows user to connect to Orbiwise Server and retrieve data via websocket.
 
 ## Prerequisite
+* NodeJS
 * Node-RED
 
-**TIP**: Node-RED requires NodeJS installation. Refer [here](https://nodejs.org/en/) to install latest NodeJS package. After Node JS installation, refer to section **[Install Node-RED](https://nodered.org/docs/getting-started/installation#install-node-red)** to continue installation of Node-RED.
+## Install NodeJS
+Node-RED requires NodeJS installation. Refer [here](https://nodejs.org/en/) to install latest NodeJS package.
+
+## Install Node-RED
+After NodeJs installation, open command window and run following command
+```c
+npm install -g --unsafe-perm node-red
+```
+**NOTE: 'sudo' might be needed for Linux/MacOS.
+
+Once installed, you are ready to run Node-RED. Run following command in command window
+```c
+node-red
+```
+You can see some console output at your command window after running the command. If the output shows **Server now running at http://127.0.0.1:1880/**, navigate to 127.0.0.1:1880 in your web browser. Node-RED platform should appear. 
+
+> More detailed info please refer [here](https://nodered.org/docs/getting-started/installation#install-node-red)
 
 ## How to install this node
 
