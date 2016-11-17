@@ -15,13 +15,17 @@ npm install -g --unsafe-perm node-red
 ```
 **NOTE**: 'sudo' might be needed for Linux/MacOS.
 
+> More detailed info please refer [here](https://nodered.org/docs/getting-started/installation#install-node-red)
+
+## Run Node-RED
+
 Once installed, you are ready to run Node-RED. Run following command in command window
 ```c
 node-red
 ```
 You can see some console output at your command window after running the command. If the output shows **Server now running at http://127.0.0.1:1880/**, navigate to 127.0.0.1:1880 in your web browser. Node-RED platform should appear. If everything is good, press `Ctrl+C` to close Node-RED. 
 
-> More detailed info please refer [here](https://nodered.org/docs/getting-started/installation#install-node-red)
+> More detailed info please refer [here](https://nodered.org/docs/getting-started/running)
 
 ## Install Node-RED orbiwise node
 
