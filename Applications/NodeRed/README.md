@@ -23,7 +23,7 @@ You can see some console output at your command window after running the command
 
 > More detailed info please refer [here](https://nodered.org/docs/getting-started/installation#install-node-red)
 
-## How to install this node
+## Install Node-RED orbiwise node
 
 * After download or git clone Hackathon-Penang-2016.zip, go to **Hackathon-Penang-2016 > Applications > NodeRed > node-red-contrib-orbiwise**. In the directory containing package.json file (as it should be), run this command in command window: 
 ```c
@@ -41,7 +41,7 @@ npm install node-red-node-base64
 
 Run Node-RED. Navigate to //localhost:1880 at web browser. Check if there are **orbiwise** and **base64** node being added.
 
-## How to use this node
+## How to use orbiwise node
 
 1. Drag the **orbiwise** node and **debug** node to the dashboard. Attach these 2 nodes with link.
 ![alt tag](https://raw.githubusercontent.com/CytronTechnologies/Hackathon-Penang-2016/master/Applications/NodeRed/img/nodered1.png)
