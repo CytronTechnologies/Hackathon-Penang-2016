@@ -1,5 +1,7 @@
 # Hackathon Penang 2016 Workshop
+
 **IMPORTANT:** Download this whole folder as zip and extract it into your preferred directory **OR** git clone the folder.
+
 ## Basic Hardware Setup
 1. Stack LoRa Shield onto CT-ARM with antenna installed as shown in picture below. Make sure UART selector on LoRa Shield is selected correctly (D2 -> RX, D3 -> TX). **User can change UART depending on the program, by default we use this configuration**.
 <p><b>CT-ARM with LoRa Shield on top</b></p>
