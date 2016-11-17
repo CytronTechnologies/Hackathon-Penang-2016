@@ -13,7 +13,7 @@ After NodeJs installation, open command window and run following command
 ```c
 npm install -g --unsafe-perm node-red
 ```
-**NOTE: 'sudo' might be needed for Linux/MacOS.
+**NOTE**: 'sudo' might be needed for Linux/MacOS.
 
 Once installed, you are ready to run Node-RED. Run following command in command window
 ```c
