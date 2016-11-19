@@ -1,5 +1,7 @@
 # Hackathon Penang 2016 Workshop
+
 **IMPORTANT:** Download this whole folder as zip and extract it into your preferred directory **OR** git clone the folder.
+
 ## Basic Hardware Setup
 1. Stack LoRa Shield onto CT-ARM with antenna installed as shown in picture below. Make sure UART selector on LoRa Shield is selected correctly (D2 -> RX, D3 -> TX). **User can change UART depending on the program, by default we use this configuration**.
 <p><b>CT-ARM with LoRa Shield on top</b></p>
@@ -24,7 +26,7 @@
 1. Download the zip file from [here](https://github.com/CytronTechnologies/arduino-device-lib).
 2. Open Arduino IDE, go to **Sketch > Include Library > Add .ZIP Library**, choose the downloaded zip file and click Open.
 3. Open `DeviceInfo` example from **File > Examples > TheThingsNetwork**, and upload to CT-ARM.
-4. Open Serial Monitor and search for DevEUI shown. Copy the DevEUI at somewhere else because we are going to use it later.
+4. Open Serial Monitor and search for DevEUI shown. **Copy the DevEUI at somewhere else because we are going to use it later**.
 
 ## User Registration
 1. Visit this link https://orbiwise-user-registration-bengchet.c9users.io/registration to register a new account.
